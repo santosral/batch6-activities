@@ -1,4 +1,4 @@
-# batch6-activities
+# Batch 6 Activities
 Repository of activities for Batch 6
 
-- [Best Practices WebDev](./Assignment%231/Homework.html)
+- [Best Practice Page](./Assignment%231/Homework.html)
