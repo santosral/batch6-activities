@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* General Styles */
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    height: 1000px;
+    background-color: #495eb3;
+    background-image: linear-gradient(rgba(0,0,0,0.5),#495eb3),url(background.jfif);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* || STORE PAGES */
+.form {
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: left;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    color: white;
+}
+
+#name, #email, #number {
+    width: 560px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#dropdown {
+    width: 590px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#comment {
+    width: 560px;
+    padding: 15px;
+    border-radius: 10px;
+    resize: none;
+}
+
+#submit {
+    width: 590px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 34px;
+    color: white;
+    background-color: green;
+}
+
+/* PSEUDO */
+#name + span {
+    position: relative;
+}
+  
+#name + span::before {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+  
+#name:invalid {
+    border: 2px solid red;
+}
+  
+#name:invalid + span::before {
+    content: '✖';
+    color: red;
+}
+  
+#name:valid + span::before {
+    content: '✓';
+    color: green;
+}
+
+#email + span {
+    position: relative;
+}
+  
+#email + span::before {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+  
+#email:invalid {
+    border: 2px solid red;
+}
+  
+#email:invalid + span::before {
+    content: '✖';
+    color: red;
+}
+  
+#email:valid + span::before {
+    content: '✓';
+    color: green;
+}
+
+
+#name + span {
+    position: relative;
+}
+  
+#name:required + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "Required";
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    top: -35px;
+    left: -70px;
+}
+
+#email + span {
+    position: relative;
+}
+  
+#email:required + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "Required";
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    top: -35px;
+    left: -70px;
+}
