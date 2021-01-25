@@ -7,6 +7,23 @@ body {
     color: white;
     height: 1000px;
     background-color: #495eb3;
+    background-image: linear-gradient(rgba(0,0,0,0.5),#495eb3),url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thanks {
+    padding-top: 300px;
+}@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* General Styles */
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    height: 1000px;
+    background-color: #495eb3;
     background-image: linear-gradient(rgba(0,0,0,0.5),#495eb3),url(background.jfif);
     background-size: contain;
     background-position: top;
