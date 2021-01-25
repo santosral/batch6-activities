@@ -5,3 +5,4 @@ Repository of activities for Batch 6
 - [Activity Semantics](./Activity-Semantics/index.html)
 - [Tribute Page](./Tribute-Page-Project/index.html)
 - [Survey Form](./survey-form/index.html)
+- [Survey Form](./survey-form/thankyou.html)
