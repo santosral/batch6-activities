@@ -2,17 +2,21 @@
 
 /* General Styles */
 body {
+    font-size: 1em;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     color: white;
-    height: 1000px;
-    background-color: #495eb3;
-    background-image: linear-gradient(rgba(0,0,0,0.5),#495eb3),url(image.jfif);
+    background-image: linear-gradient(rgba(0,0,0,0.5),#495eb3),url(background.jfif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .thanks {
-    padding-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15vw;
 }

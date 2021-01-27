@@ -2,120 +2,82 @@
 
 /* General Styles */
 body {
+    font-size: 1em;
+    color: white;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    color: white;
-    height: 1000px;
-    background-color: #495eb3;
     background-image: linear-gradient(rgba(0,0,0,0.5),#495eb3),url(background.jfif);
-    background-size: contain;
-    background-position: top;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
+@media screen and (min-width: 375px) {
+    body {
+      margin: 1em 2em;
+    }
+  } 
+
 /* || STORE PAGES */
+.text-box {
+    text-align: center;
+    font-size: 2rem;
+}
+
 .form {
-    width: 600px;
+    width: 40%;
     padding: 30px;
     margin: auto;
     border-radius: 10px;
     text-align: left;
     background-color: rgba(0,0,0,0.5);
-    font-size: 20px;
     color: white;
 }
 
 #name, #email, #number {
-    width: 560px;
+    width: 90%;
     padding: 15px;
     border-radius: 10px;
 }
 
 #dropdown {
-    width: 590px;
+    width: 96%;
     padding: 15px;
     border-radius: 10px;
 }
 
 #comment {
-    width: 560px;
+    width: 95%;
     padding: 15px;
     border-radius: 10px;
     resize: none;
 }
 
 #submit {
-    width: 590px;
+    font-size: 2rem;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
-    font-size: 20px;
     margin-top: 34px;
     color: white;
     background-color: green;
 }
 
 /* PSEUDO */
+
 #name + span {
     position: relative;
-}
-  
-#name + span::before {
-    position: absolute;
-    right: -20px;
-    top: 5px;
-}
-  
-#name:invalid {
-    border: 2px solid red;
 }
   
 #name:invalid + span::before {
-    content: '✖';
-    color: red;
-}
-  
-#name:valid + span::before {
-    content: '✓';
-    color: green;
-}
-
-#email + span {
-    position: relative;
-}
-  
-#email + span::before {
-    position: absolute;
-    right: -20px;
-    top: 5px;
-}
-  
-#email:invalid {
-    border: 2px solid red;
-}
-  
-#email:invalid + span::before {
-    content: '✖';
-    color: red;
-}
-  
-#email:valid + span::before {
-    content: '✓';
-    color: green;
-}
-
-
-#name + span {
-    position: relative;
-}
-  
-#name:required + span::after {
     font-size: 0.7rem;
     position: absolute;
     content: "Required";
     color: white;
-    background-color: black;
+    background-color: red;
     padding: 5px 10px;
-    top: -35px;
+    top: -40px;
     left: -70px;
 }
 
@@ -123,13 +85,13 @@ body {
     position: relative;
 }
   
-#email:required + span::after {
+#email:invalid + span::before {
     font-size: 0.7rem;
     position: absolute;
     content: "Required";
     color: white;
-    background-color: black;
+    background-color: red;
     padding: 5px 10px;
-    top: -35px;
+    top: -40px;
     left: -70px;
 }
