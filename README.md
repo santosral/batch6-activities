@@ -2,7 +2,7 @@
 Repository of activities for Batch 6
 
 - [Best Practice Page](./Assignment%231/Homework.html)
-- [Activity Semantics](./Activity/Semantics.html)
+- [Activity Semantics](./activity/index.html)
 - [Tribute Page](./Tribute-Page-Project/index.html)
 - [Survey Form](./survey-form/index.html)
 - [Chess Flex](./chess-flex/index.html)
