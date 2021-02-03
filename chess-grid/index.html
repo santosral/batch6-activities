@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess Grid</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!--Header-->
+            <div class="header">
+                <header>
+                    <h1>Chess Grid</h1>
+                </header>
+            </div>
+            <!--Chessboard-->
+            <div class="chessboard">
+                <div class="row">
+                    <div class="box white"><span id="1" class="pieces" draggable="true">&#9814;</span></div>
+                    <div class="box black"><span id="2" class="pieces" draggable="true">&#9816;</span></div>
+                    <div class="box white"><span id="3" class="pieces" draggable="true">&#9815;</span></div>
+                    <div class="box black"><span id="4" class="pieces" draggable="true">&#9813;</span></div>
+                    <div class="box white"><span id="5" class="pieces" draggable="true">&#9812;</span></div>
+                    <div class="box black"><span id="6" class="pieces" draggable="true">&#9815;</span></div>
+                    <div class="box white"><span id="7" class="pieces" draggable="true">&#9816;</span></div>
+                    <div class="box black"><span id="8" class="pieces" draggable="true">&#9814;</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="box black"><span id="9" class="pieces" draggable="true">&#9817;</span></div>
+                    <div class="box white"><span id="10" class="pieces" draggable="true">&#9817;</span></div>
+                    <div class="box black"><span id="11" class="pieces" draggable="true">&#9817;</span></div>
+                    <div class="box white"><span id="12" class="pieces" draggable="true">&#9817;</span></div>
+                    <div class="box black"><span id="13" class="pieces" draggable="true">&#9817;</span></div>
+                    <div class="box white"><span id="14" class="pieces" draggable="true">&#9817;</span></div>
+                    <div class="box black"><span id="15" class="pieces" draggable="true">&#9817;</span></div>
+                    <div class="box white"><span id="16" class="pieces" draggable="true">&#9817;</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                </div>
+
+                <div class="row">
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                </div>
+
+                <div class="row">
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                </div>
+
+                <div class="row">
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                    <div class="box black"></div>
+                    <div class="box white"></div>
+                </div>
+
+                <div class="row">
+                    <div class="box white"><span id="17" class="pieces" draggable="true">&#9823;</span></div>
+                    <div class="box black"><span id="18" class="pieces" draggable="true">&#9823;</span></div>
+                    <div class="box white"><span id="19" class="pieces" draggable="true">&#9823;</span></div>
+                    <div class="box black"><span id="20" class="pieces" draggable="true">&#9823;</span></div>
+                    <div class="box white"><span id="21" class="pieces" draggable="true">&#9823;</span></div>
+                    <div class="box black"><span id="22" class="pieces" draggable="true">&#9823;</span></div>
+                    <div class="box white"><span id="23" class="pieces" draggable="true">&#9823;</span></div>
+                    <div class="box black"><span id="24" class="pieces" draggable="true">&#9823;</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="box black"><span id="25" class="pieces" draggable="true">&#9820;</span></div>
+                    <div class="box white"><span id="26" class="pieces" draggable="true">&#9822;</span></div>
+                    <div class="box black"><span id="27" class="pieces" draggable="true">&#9821;</span></div>
+                    <div class="box white"><span id="28" class="pieces" draggable="true">&#9819;</span></div>
+                    <div class="box black"><span id="29" class="pieces" draggable="true">&#9818;</span></div>
+                    <div class="box white"><span id="30" class="pieces" draggable="true">&#9821;</span></div>
+                    <div class="box black"><span id="31" class="pieces" draggable="true">&#9822;</span></div>
+                    <div class="box white"><span id="40" class="pieces" draggable="true">&#9820;</span></div>
+                </div>
+            </div>
+    </main>
+</body>
+<script>
+function handleDragStart(e) {
+    this.style.opacity = '0.4';
+
+    e.dataTransfer.setData("text/plain", e.target.id);
+  }
+
+  function handleDragEnd(e) {
+    this.style.opacity = '1';
+  }
+
+  let items = document.querySelectorAll('.pieces');
+  items.forEach(function(item) {
+    item.addEventListener('dragstart', handleDragStart);
+    item.addEventListener('dragend', handleDragEnd);
+  });
+
+  function handleDragOver(e) {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "move";
+  }
+
+  function handleDrop(e) {
+    e.preventDefault();
+ const data = e.dataTransfer.getData("text/plain");
+ e.target.appendChild(document.getElementById(data));
+}
+
+  let items2 = document.querySelectorAll('.box');
+  items2.forEach(function(item) {
+    item.addEventListener('dragover', handleDragOver);
+    item.addEventListener('drop', handleDrop);
+  });
+</script>
+</html>
