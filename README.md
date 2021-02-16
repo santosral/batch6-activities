@@ -6,3 +6,4 @@ Repository of activities for Batch 6
 - [Tribute Page](./Tribute-Page-Project/index.html)
 - [Survey Form](./survey-form/index.html)
 - [Chess Flex](./chess-flex/index.html)
+- [Chess Grid](./chess-grid/index.html)
