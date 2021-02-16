@@ -1,0 +1,71 @@
+@media (max-width: 991px) {
+  .features h2 {
+    font-size: 3em;
+  }
+  .features h3 {
+    font-size: 2em;
+  }
+  .features p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .features img {
+    padding: 5vh 15vw;
+    margin: auto;
+  }
+  .features p {
+    padding: 0 15vw;
+  }
+  .features h3 {
+    padding: 0 15vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .features img {
+    padding: 0 20vw;
+  }
+  .features p {
+    padding: 0 20vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .form-field,
+  button {
+    width: 18em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 10vw;
+  }
+
+  .header a {
+    display: none;
+  }
+
+  .header .icon {
+    float: right;
+    display: block;
+    width: 15vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .text-overlay h2 {
+    font-size: 3em;
+  }
+  .text-overlay h3 {
+    font-size: 2em;
+  }
+}

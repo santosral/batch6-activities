@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/x-icon" />
+  <title>Pone</title>
+</head>
+
+<body id="Home">
+  
+  <header id="header" class="header">
+    <img id="header-img" class="logo" src="./assets/logo.png" />
+
+    <nav id="nav-bar">
+      <ul class="navbar" id="myNavbar">
+        <li class="navlink"><a href="#Home">Home</a></li>
+        <li class="navlink"><a href="#Features">Features</a></li>
+        <li class="navlink"><a href="#Contact">Contact</a></li>
+      </ul>
+
+      <a href="javascript:void(0);" class="icon" onclick="openNav()"><img src="css/images/menu.png" alt="" /></a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="showcase">
+      <div class="text-overlay">
+        <h1>Pone</h1>
+        <h2>Makes your life easier.</h2>
+        <a href="#">Buy</a>
+      </div>
+    
+      <figure>
+        <video id="video" draggable="false" src="./assets/video.mp4" type="video/mp4" autoplay loop muted
+          preload="auto"></video>
+      </figure>
+    </section>
+
+    <section class="features" id="Features">
+      <h2>Features</h2>
+      <div class="container">
+
+        <article class="feature ceramic">
+          <img src="assets/ceramic.jpeg" alt="" class="ceramic__image" />
+
+          <h3 class="ceramic__title">Kicks glass.</h3>
+          <p class="ceramic__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </article>
+
+        <article class="feature water">
+          <img src="assets/water.jpeg" alt="" class="water__image" />
+
+          <h3 class="water__title">Blows other phones out of the water.</h3>
+          <p class="water__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </article>
+
+        <article class="feature camera">
+          <img src="assets/camera.jpeg" alt="" class="camera__image" />
+
+          <h3 class="camera__title">Pro camera system</h3>
+          <p class="camera__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrapper" id="Contact">
+      <div class="inner">
+        <div class="contact">
+          <h2>Contact Us</h2>
+        </div>
+        <form method="POST" id="form">
+          <div class="form-field">
+            <input name="name" id="name" value placeholder="Name" data-rule="required">
+          </div>
+          <div class="form-field">
+            <input type="email" name="email" id="email" value="" placeholder="Email" data-rule="required|email"
+              class="">
+          </div>
+          <div class="form-field">
+            <textarea name="details" id="textarea" placeholder="Message" rows="6" data-rule="required"></textarea>
+          </div>
+          <div class="form-field">
+            <button onclick="" type="button" class="button primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer id="footer">
+      <hr>
+      <div class="inner">
+        <div class="content">
+          <p>Created by Ralph Ian Santos</p>
+        </div>
+      </div>
+      </div>
+    </footer>
+  </main>
+</body>
+<script src="./js/main.js"></script>
+
+</html>

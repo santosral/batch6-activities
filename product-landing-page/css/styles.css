@@ -1,0 +1,297 @@
+@import "animation.css";
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+
+body {
+  background: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  border: 1px solid #fdee30;
+  background: #fdee30;
+}
+
+/* header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  max-height: 10vh;
+  padding: 20px 50px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scrolled {
+  background: rgba(241, 231, 85, 0.877);
+  backdrop-filter: saturate(180%) blur(20px);
+  transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
+.navbar {
+  display: flex;
+  align-self: flex-start;
+}
+
+.navbar a:hover {
+  color: #20b5e2;
+}
+
+.header a {
+  display: block;
+  padding: 0 16px;
+  color: #fefefe;
+}
+
+.header .icon {
+  display: none;
+}
+
+/* showcase */
+
+figure {
+  background: #000;
+  mix-blend-mode: overlay;
+}
+
+figure #video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  padding: 30vh 15vw;
+  z-index: 1;
+  color: #fefefe;
+}
+
+.text-overlay h1 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text-overlay h2 {
+  color: #fdee30;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.text-overlay a {
+  display: inline-block;
+  font-size: 1em;
+  background: #000;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+/* features */
+
+.features {
+  width: 100%;
+  padding: 0 5vw;
+  padding-top: 5vh;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 100px;
+}
+
+.features h2 {
+  color: #fefefe;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 1em;
+  padding: 5vh 0;
+}
+
+.features h3 {
+  color: #fdee30;
+  font-size: 4em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.features p {
+  color: #fefefe;
+  font-size: 1.5em;
+  text-align: left;
+  padding: 2.5vh 0;
+  text-align: center;
+}
+
+/* form */
+
+.wrapper {
+  width: 100%;
+  padding: 10vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  text-align: center;
+  color: #fefefe;
+  font-size: 4rem;
+  padding-bottom: 5vh;
+}
+
+.form-field {
+  padding: 0.5vh 0;
+  width: 30em;
+}
+
+#name {
+  width: 100%;
+}
+
+#email {
+  width: 100%;
+}
+
+#textarea {
+  width: 100%;
+}
+
+button {
+  background: #fefefe;
+  color: #000;
+  width: 30em;
+  border-radius: 15px;
+  padding: 1vh 2vw;
+}
+
+/* footer */
+
+footer {
+  padding: 10vh 5vw;
+  color: #fefefe;
+  text-align: center;
+}
+
+footer .content {
+  padding-top: 5vh;
+}
+
+/* mediaquery */
+
+@media (max-width: 991px) {
+  .features h2 {
+    font-size: 3em;
+  }
+  .features h3 {
+    font-size: 2em;
+  }
+  .features p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .features img {
+    padding: 5vh 15vw;
+    margin: auto;
+  }
+  .features p {
+    padding: 0 15vw;
+  }
+  .features h3 {
+    padding: 0 15vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .features img {
+    padding: 0 20vw;
+  }
+  .features p {
+    padding: 0 20vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .form-field,
+  button {
+    width: 18em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 10vw;
+  }
+
+  .header a {
+    display: none;
+  }
+
+  .header .icon {
+    float: right;
+    display: block;
+    width: 15vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .text-overlay h2 {
+    font-size: 3em;
+  }
+  .text-overlay h3 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 991px) {
+  .text-overlay h2 {
+    font-size: 3em;
+  }
+  .text-overlay h3 {
+    font-size: 2em;
+  }
+}
+
