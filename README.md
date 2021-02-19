@@ -7,3 +7,4 @@ Repository of activities for Batch 6
 - [Survey Form](./survey-form/index.html)
 - [Chess Flex](./chess-flex/index.html)
 - [Chess Grid](./chess-grid/index.html)
+- [Product Landing Page](./product-landing-page/index.html)
