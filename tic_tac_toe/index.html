@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <section>
+      <h1 class="game--title">Tic Tac Toe</h1>
+      <class class="game--container">
+        <div data-cell-index="0-0" class="cell"></div>
+        <div data-cell-index="0-1" class="cell"></div>
+        <div data-cell-index="0-2" class="cell"></div>
+        <div data-cell-index="1-0" class="cell"></div>
+        <div data-cell-index="1-1" class="cell"></div>
+        <div data-cell-index="1-2" class="cell"></div>
+        <div data-cell-index="2-0" class="cell"></div>
+        <div data-cell-index="2-1" class="cell"></div>
+        <div data-cell-index="2-2" class="cell"></div>
+      </class>
+      <h2 class="game--status"></h2>
+      <button class="game--previous" id="previous" onclick="previousButton()">Previous</button>
+      <button class="game--restart">Restart Game</button>
+      <button class="game--next" id="next" onclick="nextButton()">Next</button>
+    </section>
+  </body>
+  <script src="main.js"></script>
+</html>

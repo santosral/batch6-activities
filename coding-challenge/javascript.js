@@ -14,7 +14,7 @@ console.log(johnBMI = Math.round(johnBMI * 100) / 100);
 var compareBMI = victorBMI > johnBMI;
 
 function BMI(compareBMI) {
-  if (compareBMI == true) {
+  if (compareBMI === true) {
     return console.log("Victor's BMI is higher than John's");
   } else {
     return console.log("John's BMI is higher than Victor's");
