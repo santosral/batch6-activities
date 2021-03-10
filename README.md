@@ -9,3 +9,4 @@ Repository of activities for Batch 6
 - [Chess Grid](./chess-grid/index.html)
 - [Product Landing Page](./product-landing-page/index.html)
 - [Tic Tac Toe](./tic_tac_toe/index.html)
+- [Playing Cards](./playing_cards/index.html)
