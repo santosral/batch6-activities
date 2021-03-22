@@ -10,3 +10,4 @@ Repository of activities for Batch 6
 - [Product Landing Page](./product-landing-page/index.html)
 - [Tic Tac Toe](./tic_tac_toe/index.html)
 - [Playing Cards](./playing_cards/index.html)
+- [Pig Game](./pig-game-starter-master/pig-game-starter/index.html)
