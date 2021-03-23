@@ -292,9 +292,10 @@ const init = function () {
     let canvas = document.getElementById('canvas');
     canvas.remove();
 
-    document.getElementById(`score-${activePlayer}`).style.display = ""
+    document.getElementById(`score-0`).style.display = ""
+    document.getElementById(`score-1`).style.display = ""
     document.getElementById(`box1`).style.display = ""
-        document.getElementById(`box2`).style.display = ""
+    document.getElementById(`box2`).style.display = ""
   }; 
 
   btnNew.addEventListener('click', init);
