@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.5px;
+  background-color: #ffffff;
+  color: #03045E;
+}
+
+.header {
+  height: 15vh;
+  background-color: rgb(176, 255, 251);
+}
+
+.header h1 {
+  margin-top: -80px;
+  text-align: center;
+}
+
+.header img {
+  height: 15vh;
+  padding-left: 10px;
+  max-width: 100%;
+}
+
+.display_users {
+  margin-top: 5vh;
+  height: auto;
+}
+
+.tableContainer {
+  height: 60vh;
+  overflow-y: scroll;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  background-color: rgb(240, 255, 254);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e2e2e2;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #03045E;
+}
+
+th {
+  background: #abfafa;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+button,
+#createUser,
+#deposit,
+#withdraw,
+#transfer {
+  color: white;
+  background-color: #90E0EF;
+  background-image: radial-gradient(#ff9292, #f80606);
+  margin-top: 5%;
+  margin-right: 15px;
+  padding: 0;
+  cursor: pointer;
+  text-align: center;
+  width: 110px;
+  height: 41px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-290%, -50%);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+#createUser,
+#deposit,
+#withdraw,
+#transfer {
+  width: 80px;
+  height: 30px;
+  margin-top: 10vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#deposit,
+#withdraw {
+  margin-top: 5vh;
+}
+
+.create_user_form,
+.deposit_form,
+.withdraw_form,
+.transfer_form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 10px;
+}
+
+.transfer_form h1 {
+  text-align: center;
+}
+
+.create_user_form header,
+.deposit_form header,
+.withdraw_form header,
+.transfer_form header {
+  background-color: #ADE8F4;
+}
+
+.form_content,
+.deposit_content,
+.withdraw_content,
+.transfer_content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.transfer_content {
+  margin: 2.5% auto;
+}
+
+.transfer_content h1 {
+  margin: 2.5% auto;
+}
+
+.deposit_content,
+.withdraw_content,
+.transfer_content {
+  width: 30%;
+}
+
+.close {
+  color: #00458b;
+  float: right;
+  font-size: 28px;
+  margin-right: 15px;
+}
+
+.close:hover,
+.close:focus {
+  color: #2d25b7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.acctContainer {
+  margin: 30px 0;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-container label {
+  margin: 10px 15px;
+}
+
+.form-container input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.deposit-container input,
+.withdraw-container input,
+.sender-container input,
+.receiver-container input {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 10px;
+}
+
+.deposit-container,
+.withdraw-container,
+.sender-container,
+.receiver-container {
+  margin: 0 15px;
+  margin-top: 30px;
+}
+
+.sender-container,
+.receiver-container {
+  margin-top: 2.5px
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-container input, .deposit-container input, .withdraw-container input, .sender-container input, .receiver-container input {
+    margin: 10px 0;
+  }
+
+  .form-container, .deposit-container, .withdraw-container, .sender-container, .receiver-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.acctContainer h1 {
+  text-align: center;
+}
