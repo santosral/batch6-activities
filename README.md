@@ -11,3 +11,4 @@ Repository of activities for Batch 6
 - [Tic Tac Toe](./tic_tac_toe/index.html)
 - [Playing Cards](./playing_cards/index.html)
 - [Pig Game](./pig-game-starter-master/pig-game-starter/index.html)
+- [Banking App](./banking_app/index.html)
