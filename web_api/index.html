@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sangkap</title>
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script src="./assets/main.js" defer></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+  <!-- Header -->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="" class="nav__logo">Sangkap</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#menu" class="nav__link">Search</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home__container bd-container bd-grid">
+        <div class="home__data">
+          <h1 class="home__title">Sangkap</h1>
+          <h2 class="home__subtitle">
+            Recipes to find. <br />
+            Count your calories intake.
+          </h2>
+          <a href="#menu" class="button">Search Now</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <!-- About -->
+    <section class="about section bd-container" id="about">
+      <div class="about__container bd-grid">
+        <div class="about__data">
+          <span class="section-subtitle about__initial">About us</span>
+          <h2 class="section-title about__initial">
+            We are about eating better.
+          </h2>
+          <p class="about__description">
+            Our goal is to capture the world's food knowledge and distill it to help you make informed choices at the store and in the kitchen.
+          </p>
+        </div>
+
+        <img src="assets/img/about.jpg" alt="" class="about__img" />
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu section bd-container" id="menu">
+      <span class="section-subtitle">Search</span>
+      <h2 class="section-title">What will you cook today?</h2>
+      <form class="menu__search" autocomplete="off">
+        <input type="text" class="search" placeholder="Enter here" id="search-input" />
+        <button type="submit" class="search-btn" id="search-btn">
+          <i class='bx bxs-search'></i>
+        </button>
+      </form>
+      <h1 class="noRecipe">No Recipe Found.</h1>
+
+      <div class="menu__container bd-grid" id="meal">
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+</body>
+
+</html>
