@@ -12,3 +12,4 @@ Repository of activities for Batch 6
 - [Playing Cards](./playing_cards/index.html)
 - [Pig Game](./pig-game-starter-master/pig-game-starter/index.html)
 - [Banking App](./banking_app/index.html)
+- [Web API](./web_api/index.html)
