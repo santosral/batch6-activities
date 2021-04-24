@@ -227,7 +227,11 @@ img {
 
 /* Home */
 .wrapper {
+<<<<<<< HEAD
   background: url("../images/bg-img.jpg");
+=======
+  background: url('images/bg-img.jpg');
+>>>>>>> cac2592aee77d0d1480d8e4b43a536efd782d0b7
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
