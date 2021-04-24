@@ -227,7 +227,7 @@ img {
 
 /* Home */
 .wrapper {
-  background: url(/web_api/assets/img/bg-img.jpg);
+  background: url('/web_api/assets/img/bg-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
